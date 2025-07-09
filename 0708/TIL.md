@@ -85,13 +85,13 @@ class Car:
   n = 0 
 
   def __init__(self):
-    Car.n += 1 #static number 동작하는것처럼
+    Car.n += 1 
 
 
   def introduce(self):
     print(f'차이름: {self.name}, 생산년도: {self.year}, 차색깔: {self.color}')
   
-  @classmethod #like static method
+  @classmethod 
   def introduce2(cls): 
     print(f'현재 {cls.n} 대의 차량을 판매 중입니다.')
 
